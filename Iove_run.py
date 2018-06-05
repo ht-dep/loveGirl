@@ -80,7 +80,7 @@ def ec():
     import yagmail
     print("机器人退出时间：{}".format(datetime.datetime.now()))
     # print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>") #HT
-    yag = yagmail.SMTP(user='17096025069@139.com', password='qht131427', host='smtp.139.com')
+    yag = yagmail.SMTP(user='xxxx@139.com', password='xxx', host='smtp.139.com')
     body = '{}  微信机器人掉线,请重启'.format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     yag.send(to=["qihongtao@rinpo.com"], subject='微信机器人掉线通知', contents=[body])
     # print("<<<<<<<<<<<<<<<<<<<<<<")# HT
@@ -104,7 +104,7 @@ word_faces = ["✪ω✪", '✷(ꇐ‿ꇐ)✷', "｡◕‿◕｡", "(๑￫ܫ￩)
 
 
 
-girl_names = ["你会"] #测试
+# girl_names = ["你会"] #测试
 
 
 def get_moon_six():
