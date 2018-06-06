@@ -82,7 +82,7 @@ def ec():
     # print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>") #HT
     yag = yagmail.SMTP(user='xxxx@139.com', password='xxx', host='smtp.139.com')
     body = '{}  微信机器人掉线,请重启'.format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-    yag.send(to=["qihongtao@rinpo.com"], subject='微信机器人掉线通知', contents=[body])
+    yag.send(to=["xxxxx@139.com"], subject='微信机器人掉线通知', contents=[body])
     # print("<<<<<<<<<<<<<<<<<<<<<<")# HT
     file_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "itchat.pkl")
     if os.path.isfile(file_dir):
@@ -219,7 +219,7 @@ def get_group_youzheng():
         "man": [],
         "girl": []
     }
-    group = itchat.search_chatrooms(name='2018.05.20传邮万里•寄情铭心')[0]
+    group = itchat.search_chatrooms(name='2018.05.20xxxx铭心')[0]
     print(group)
     print("群聊的名称：{}".format(group["NickName"]))
     # 更新群成员列表
@@ -236,7 +236,7 @@ def get_group_youzheng():
             youzhen_members["girl"].append(member)
     print("邮政群的女生们，数量：{}".format(len(youzhen_members["girl"])))
     for girl in youzhen_members["girl"]:
-        # if girl["NickName"] in ["浅浅"]:
+        # if girl["NickName"] in ["xxx"]:
         #     print(girl)
         # 我的好友
         # if girl["ContactFlag"] != 0:
